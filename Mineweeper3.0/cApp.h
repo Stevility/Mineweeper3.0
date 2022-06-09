@@ -12,8 +12,11 @@ private:
 	cMain* m_frame1 = nullptr;
 
 public:
-	virtual bool onInit();
+	bool OnInit() override
+	{
+		m_frame1 = new cMain();
+		m_frame1->Show(true);
+
+		return true;
+	}
 };
-
-
-wxIMPLEMENT_APP(cApp);
