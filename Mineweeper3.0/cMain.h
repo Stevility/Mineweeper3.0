@@ -8,9 +8,11 @@ public:
 	~cMain();
 
 public:
-	wxButton* m_btn1 = nullptr;
-	wxTextCtrl* m_txt1 = nullptr;
-	wxListBox* m_list1 = nullptr;
+	int nFieldWi = 10;
+	int nFieldHe = 10;
+	wxButton** btn;
+	int* nField = nullptr;
+	bool bFirstCl = true;
 
 	void OnButtonClicked(wxCommandEvent &evt);
 
